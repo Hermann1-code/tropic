@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import type { Metadata, Viewport } from "next";
 import { Outfit } from "next/font/google";
 
@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={outfit.variable}>
+    <html lang="fr" className={`${outfit.variable} scroll-smooth`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
