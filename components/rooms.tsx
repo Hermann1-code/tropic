@@ -19,7 +19,7 @@ const rooms = [
     name: "Confort",
     tagline: "L'équilibre parfait",
     description: "Spacieuse et lumineuse, idéale pour les séjours prolongés.",
-    image: "/images/room-comfort.jpg",
+    image: "/images/room-standard.jpg",
     price: "40 000",
     size: "25m²",
     featured: true,
@@ -27,8 +27,9 @@ const rooms = [
   {
     name: "Suite",
     tagline: "L'excellence absolue",
-    description: "Notre meilleure catégorie pour une expérience exceptionnelle.",
-    image: "/images/room-suite.jpg",
+    description:
+      "Notre meilleure catégorie pour une expérience exceptionnelle.",
+    image: "/images/room-standard.jpg",
     price: "65 000",
     size: "35m²",
   },
@@ -50,10 +51,12 @@ export function Rooms() {
     <section id="chambres" className="py-32 bg-secondary">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
-        <div 
+        <div
           ref={headerRef}
           className={`mb-20 max-w-2xl transition-all duration-1000 ${
-            headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            headerVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
           }`}
         >
           <p className="mb-6 text-xs font-light tracking-[0.4em] uppercase text-accent">
@@ -78,7 +81,7 @@ export function Rooms() {
               onMouseEnter={() => setActiveRoom(index)}
             >
               {/* Image */}
-              <div className="relative aspect-[3/4] overflow-hidden mb-6">
+              <div className="relative aspect-square overflow-hidden mb-6">
                 <Image
                   src={room.image || "/placeholder.svg"}
                   alt={room.name}
@@ -121,10 +124,14 @@ export function Rooms() {
                 {/* Price & CTA */}
                 <div className="flex items-end justify-between pt-6 border-t border-border">
                   <div>
-                    <p className="text-xs text-muted-foreground mb-1">À partir de</p>
+                    <p className="text-xs text-muted-foreground mb-1">
+                      À partir de
+                    </p>
                     <p className="text-2xl font-light text-foreground">
                       {room.price}
-                      <span className="text-sm text-muted-foreground ml-1">FCFA</span>
+                      <span className="text-sm text-muted-foreground ml-1">
+                        FCFA
+                      </span>
                     </p>
                   </div>
                   <Link

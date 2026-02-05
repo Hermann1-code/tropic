@@ -17,7 +17,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-hotel.jpg"
+          src="/images/hero.jpg"
           alt="Hôtel Tropic Daloa"
           fill
           className="object-cover"
@@ -30,7 +30,7 @@ export function Hero() {
       <div className="relative h-full flex flex-col items-center justify-center px-6 text-center">
         <div className="max-w-4xl">
           {/* Overline */}
-          <p 
+          <p
             className={`mb-6 text-xs font-light tracking-[0.4em] uppercase text-background/80 transition-all duration-1000 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
@@ -39,7 +39,7 @@ export function Hero() {
           </p>
 
           {/* Title */}
-          <h1 
+          <h1
             className={`mb-8 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-background transition-all duration-1000 delay-200 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
@@ -48,17 +48,17 @@ export function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p 
+          <p
             className={`mx-auto max-w-xl text-lg sm:text-xl font-light leading-relaxed text-background/90 transition-all duration-1000 delay-400 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Un havre de sérénité où l&apos;élégance contemporaine 
-            rencontre la chaleur de l&apos;hospitalité africaine.
+            Un havre de sérénité où l&apos;élégance contemporaine rencontre la
+            chaleur de l&apos;hospitalité africaine.
           </p>
 
           {/* CTA */}
-          <div 
+          <div
             className={`mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 transition-all duration-1000 delay-[600ms] ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
@@ -79,12 +79,15 @@ export function Hero() {
         </div>
 
         {/* Scroll Indicator */}
-        <div 
+        <div
           className={`absolute bottom-12 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-[800ms] ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <Link href="#apropos" className="flex flex-col items-center gap-3 text-background/60 hover:text-background transition-colors">
+          <Link
+            href="#apropos"
+            className="flex flex-col items-center gap-3 text-background/60 hover:text-background transition-colors"
+          >
             <span className="text-xs tracking-[0.3em] uppercase">Défiler</span>
             <ArrowDown className="h-4 w-4 animate-bounce" />
           </Link>
