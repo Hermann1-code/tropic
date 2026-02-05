@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Premium Luxury Hotel Theme */
+    --background: 60 9% 96%; /* Warm ivory */
+    --foreground: 0 0% 8%; /* Near black */
+    --card: 60 9% 98%; /* Soft cream */
+    --card-foreground: 0 0% 8%;
+    --popover: 60 9% 98%;
+    --popover-foreground: 0 0% 8%;
+    --primary: 0 0% 8%; /* Deep black */
+    --primary-foreground: 60 9% 96%;
+    --secondary: 45 20% 92%; /* Warm sand */
+    --secondary-foreground: 0 0% 8%;
+    --muted: 45 15% 90%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 38 70% 50%; /* Rich gold */
+    --accent-foreground: 0 0% 8%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 45 15% 88%;
+    --input: 45 15% 88%;
+    --ring: 38 70% 50%;
+    --chart-1: 0 0% 8%;
+    --chart-2: 38 70% 50%;
+    --chart-3: 45 20% 60%;
+    --chart-4: 0 0% 30%;
+    --chart-5: 45 15% 75%;
+    --radius: 0rem;
+    --sidebar-background: 60 9% 96%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 0 0% 8%;
+    --sidebar-primary-foreground: 60 9% 96%;
+    --sidebar-accent: 45 20% 92%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 45 15% 88%;
+    --sidebar-ring: 38 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
